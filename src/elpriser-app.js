@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       redirect: "follow",
     };
     return fetch(
-      "https://api.ngine.se/webhook/elhandel-priser?searchdate=" + searchDate,
+      "https://api.ngine.se/webhook/elhandel-new?searchdate=" + searchDate,
       requestOptions
     )
       .then((response) => response.text())
