@@ -50,7 +50,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
   function populateList(result) {
     if (result) {
       result = JSON.parse(result);
-      console.log(result);
       var allDivs = document.querySelectorAll("div");
       var number = 0;
       var area = "SE" + (document.getElementById("elomrade").selectedIndex + 1);
