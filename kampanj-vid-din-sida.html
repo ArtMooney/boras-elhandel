@@ -8,19 +8,2251 @@
   rel="stylesheet"
   type="text/css"
 />
-<link
-  href="https://filedn.eu/lXpklx4T9ArjUUtKzxsQ36h/boraselhandel/boras-elhandel.css"
-  rel="stylesheet"
-  type="text/css"
-/>
+
+<style>
+  .kampanj-banner {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 50rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url("https://boraselhandel.se/wp-content/uploads/2022/09/Header.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .banner-header {
+    position: relative;
+    font-family: "Avenir LT Std";
+    color: #fff;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .banner-splash {
+    position: absolute;
+    left: 4%;
+    top: 7%;
+    right: auto;
+    bottom: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 15rem;
+    height: 15rem;
+    padding-bottom: 0.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #f9d61c;
+    -webkit-transform: rotate(-9deg);
+    -ms-transform: rotate(-9deg);
+    transform: rotate(-9deg);
+  }
+
+  .spash-text-small {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-family: "Avenir LT Std";
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .spash-text-large {
+    margin-bottom: -0.4rem;
+    font-family: "Avenir LT Std";
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 900;
+  }
+
+  .kampanj-block {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    min-height: 20rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  .kampanj-block.paverka {
+    min-height: 0rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .kampanj-block.vertical-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .kampanj-blob {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 2rem 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-style: dotted;
+    border-width: 6px;
+    border-color: #73a0ac;
+    border-radius: 0.5rem;
+    text-decoration: none;
+  }
+
+  .kampanj-blob.no-border {
+    border-style: none;
+  }
+
+  .kampanj-blob.no-border.left {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .kampanj-blob.left {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .kampanj-blob.vit {
+    border-color: #fffef7;
+  }
+
+  .kampanj-text {
+    font-family: "Avenir LT Std";
+    color: #484848;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+  }
+
+  .kampanj-text.rubrik {
+    margin-bottom: 1.5rem;
+    color: #000;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+  }
+
+  .kampanj-text.rubrik.text-cadet-blue {
+    color: #73a0ac;
+  }
+
+  .kampanj-text.rubrik.center {
+    text-align: center;
+  }
+
+  .kampanj-text.bold {
+    color: #000;
+    font-weight: 900;
+  }
+
+  .kampanj-text.bold.text-white {
+    color: #fff;
+  }
+
+  .kampanj-text.bold.text-ikkonzome-pink {
+    color: #f28f91;
+  }
+
+  .kampanj-text.center {
+    text-align: center;
+  }
+
+  .kampanj-text.category {
+    display: inline-block;
+    margin-bottom: 2rem;
+    border-bottom: 0.6rem solid #f28f91;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .kampanj-text.text-white {
+    color: #fff;
+  }
+
+  .kampanj-button {
+    min-width: 18rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 1.2rem 2rem 1rem;
+    border-radius: 0.7rem;
+    background-color: #69a2ad;
+    -webkit-transition: background-color 200ms ease;
+    transition: background-color 200ms ease;
+    font-family: "Avenir LT Std";
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .kampanj-button:hover {
+    background-color: #80b1be;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .kampanj-blob-yttre {
+    width: 70%;
+    padding: 2.5rem;
+    background-color: #c4dade;
+  }
+
+  .kampanj-blob-yttre.gul {
+    background-color: #fffef7;
+  }
+
+  .kampanj-blob-yttre.gul.w50 {
+    width: 50%;
+  }
+
+  .kampanj-blob-yttre.w50 {
+    width: 50%;
+  }
+
+  .kampanj-blob-yttre.vit {
+    background-color: #fff;
+  }
+
+  .kampanj-image {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .kampanj-image.solpaneler {
+    background-image: url("https://boraselhandel.se/wp-content/uploads/2022/09/Solceller.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .kampanj-image.solpaneler-v2 {
+    background-image: url("https://boraselhandel.se/wp-content/uploads/2022/09/Solceller_close.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .image-cover {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .image-cover.wavy-transition {
+    -o-object-position: 0% 50%;
+    object-position: 0% 50%;
+  }
+
+  .image-cover.align-bottom {
+    -o-object-position: 50% 92%;
+    object-position: 50% 92%;
+  }
+
+  .image-cover.coffee {
+    position: relative;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    height: 100%;
+    padding-top: 60%;
+    background-image: url("https://boraselhandel.se/wp-content/uploads/2022/09/puls_2000px.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .image-cover.electric-lines {
+    position: relative;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    height: 100%;
+    padding-top: 68%;
+    background-image: url("https://boraselhandel.se/wp-content/uploads/2022/09/Ledningar.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .image-cover.schysst-handel {
+    position: relative;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    background-image: url("https://boraselhandel.se/wp-content/uploads/2022/09/SchysstElhandel.jpg");
+    background-position: 100% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image-cover.vid-din-sida {
+    position: relative;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    background-image: url("https://boraselhandel.se/wp-content/uploads/2022/09/Kund_bild.jpg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .list-numrering {
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    font-family: "Avenir LT Std";
+    font-weight: 900;
+  }
+
+  .text-cadet-blue {
+    color: #73a0ac;
+  }
+
+  .content {
+    position: relative;
+    overflow: hidden;
+    margin-right: -8vw;
+    margin-left: -8vw;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .spacer {
+    overflow: hidden;
+    width: 100%;
+    height: 5rem;
+  }
+
+  .image-special-titel {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .elpriser-wrapper {
+    width: 100%;
+    min-width: 800px;
+    padding: 2.5rem;
+    background-color: #c4dade;
+  }
+
+  .elpriser-block {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    min-height: 20rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    font-family: "Avenir LT Std";
+  }
+
+  .elpriser-meny {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .elpris-input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8d8d8d;
+    border-radius: 0.2rem;
+    background-color: #fff;
+  }
+
+  .elpris-input.calendar {
+    padding-right: 37px;
+  }
+
+  .elpriser-tabell-meny {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1.5rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .calendar-icon {
+    position: absolute;
+    left: auto;
+    top: 15%;
+    right: 3%;
+    bottom: 0%;
+    width: 1.4rem;
+    cursor: pointer;
+  }
+
+  .elpriser-tab {
+    min-width: 7.1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #c4dade;
+    background-color: #57a3af;
+    color: #fff;
+    text-align: center;
+  }
+
+  .elpriser-tab.w--current {
+    border: 0.2rem dotted #57a3af;
+    background-color: #c4dde2;
+  }
+
+  .elpris-input-wrapper {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .spacer-s {
+    width: 1rem;
+    height: 1rem;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+  .elpris-column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 0px 1px 1px;
+    border-color: #8d8d8d;
+    background-color: #fff;
+  }
+
+  .elpris-column.right {
+    border-left-width: 0px;
+  }
+
+  .elpris-column.outline-top {
+    border-top-width: 1px;
+  }
+
+  .elpriser-table {
+    border-top: 1px solid #8d8d8d;
+  }
+
+  .elpriser-table-rubrik {
+    font-weight: 900;
+  }
+
+  .elpriser-columns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .graf-wrapper {
+    overflow: hidden;
+  }
+
+  .hide1 {
+    display: none;
+  }
+
+  .kampanj-button-copy {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 1.2rem 2rem 1rem;
+    border-radius: 0.7rem;
+    background-color: #73a0ac;
+    -webkit-transition: none 0ms ease;
+    transition: none 0ms ease;
+    font-family: "Avenir LT Std";
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .kampanj-button-copy:hover {
+    background-color: #80b1be;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .satt-att-paverka {
+    width: 49rem;
+  }
+
+  .div-line {
+    width: 90%;
+    height: 2px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-color: #73a0ac;
+  }
+
+  .satt-att-paverka-v2 {
+    display: none;
+    width: 49rem;
+  }
+
+  .gradient-wait {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    display: none;
+  }
+
+  .message-box {
+    display: none;
+    width: 100%;
+    min-height: 2.5rem;
+    padding: 0.5rem;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fcc;
+  }
+
+  .tabs {
+    margin-top: 2.5rem;
+  }
+
+  .loading {
+    width: 15rem;
+    margin-top: 14rem;
+  }
+
+  .loading-overlay {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    display: none;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .datepicker-wrapper {
+    position: relative;
+  }
+
+  .infobar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #f8d539;
+    text-align: center;
+  }
+
+  .vid-din-sida-banner {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 45rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url("https://boraselhandel.se/wp-content/uploads/2022/09/Header_1.jpg");
+    background-position: 50% 63%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .banner-title-image {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    background-image: url("https://boraselhandel.se/wp-content/uploads/2022/09/Kampanjlogo.png");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .col-candy-floss-cupcake {
+    background-color: #fff0dd;
+  }
+
+  .kampanj-content {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    overflow: hidden;
+    width: 100%;
+    padding: 3rem 4rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .kampanj-content.wavy-transition {
+    min-height: 90vh;
+  }
+
+  .image-contain {
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
+  .image-contain.list-split {
+    width: 50%;
+  }
+
+  .vid-din-sida-banner-slice {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 12rem;
+    max-height: 12rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url("https://boraselhandel.se/wp-content/uploads/2022/09/Header_1.jpg");
+    background-position: 50% 0%;
+    background-size: cover;
+  }
+
+  .kampanj-list {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+    -ms-grid-columns: 3.5rem 1fr;
+    grid-template-columns: 3.5rem 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .list-number {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    padding-top: 0.2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #f28f91;
+    font-family: "Avenir LT Std";
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+  }
+
+  .kampanj-relative {
+    position: relative;
+  }
+
+  .kampanj-relative.wavy-transition {
+    background-image: url("https://boraselhandel.se/wp-content/uploads/2022/09/window.jpg");
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .kampanj-relative.the-wave {
+    background-image: url("https://boraselhandel.se/wp-content/uploads/2022/09/wavy-transition.png");
+    background-position: 0% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .wavy-transition-padding {
+    padding-top: 3rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  ._2-split {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .col-explorer-blue {
+    background-color: #57a3af;
+  }
+
+  .blob {
+    padding: 2rem;
+  }
+
+  .blob.col-explorer-blue {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .text-ikkonzome-pink {
+    color: #f28f91;
+  }
+
+  .kampanj-link {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 991px) {
+    .banner-header {
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+
+    .banner-splash {
+      left: 2%;
+      top: 5%;
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .spash-text-small {
+      font-size: 0.8rem;
+    }
+
+    .spash-text-large {
+      margin-bottom: -0.4rem;
+      font-size: 2.1rem;
+      line-height: 2.1rem;
+    }
+
+    .kampanj-blob {
+      padding: 2rem 2.5rem;
+    }
+
+    .kampanj-blob-yttre {
+      width: 85%;
+      padding: 1.5rem;
+    }
+
+    .kampanj-image.solpaneler {
+      margin-top: 15rem;
+      margin-bottom: 15rem;
+    }
+
+    .kampanj-image.solpaneler-v2 {
+      margin-top: 15rem;
+      margin-bottom: 15rem;
+    }
+
+    .image-cover.mercedes-laddare {
+      -o-object-position: 37% 50%;
+      object-position: 37% 50%;
+    }
+
+    .content {
+      margin-right: 0px;
+      margin-left: 0px;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    .image-special-titel {
+      margin-bottom: 1.5rem;
+    }
+
+    .elpriser-wrapper {
+      width: 85%;
+      min-width: 0px;
+      padding: 1.5rem;
+    }
+
+    .elpris-input.calendar {
+      padding-right: 30px;
+    }
+
+    .calendar-icon {
+      top: 18%;
+      right: 4%;
+      width: 1.2rem;
+    }
+
+    .spacer-s {
+      width: 0.7rem;
+      height: 0.7rem;
+    }
+
+    .satt-att-paverka {
+      width: 37.9rem;
+    }
+
+    .satt-att-paverka-v2 {
+      width: 37.9rem;
+    }
+
+    .vid-din-sida-banner {
+      height: 30rem;
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+
+    .kampanj-content {
+      padding-right: 0rem;
+      padding-left: 0rem;
+    }
+
+    .vid-din-sida-banner-slice {
+      height: 7rem;
+      max-height: 7rem;
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .kampanj-banner {
+      height: 35rem;
+    }
+
+    .banner-header {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+
+    .kampanj-block {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .kampanj-blob-yttre {
+      padding: 1rem;
+    }
+
+    .kampanj-blob-yttre.gul.w50 {
+      width: 100%;
+    }
+
+    .kampanj-blob-yttre.w50 {
+      width: 100%;
+    }
+
+    .kampanj-image {
+      width: 100%;
+      min-height: 40rem;
+    }
+
+    .kampanj-image.solpaneler {
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+    }
+
+    .kampanj-image.solpaneler-v2 {
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+    }
+
+    .image-cover.schysst-handel {
+      min-height: 43vw;
+      background-position: 0% 50%;
+    }
+
+    .image-cover.vid-din-sida {
+      min-height: 87vw;
+    }
+
+    .elpriser-wrapper {
+      padding: 1rem;
+    }
+
+    .elpriser-block {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .elpriser-meny {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .elpris-input.calendar {
+      padding-right: 36px;
+    }
+
+    .elpriser-tabell-meny {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .calendar-icon {
+      right: 2%;
+    }
+
+    .elpris-input-wrapper {
+      -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+    }
+
+    .satt-att-paverka {
+      display: none;
+      width: 32rem;
+    }
+
+    .satt-att-paverka-v2 {
+      display: block;
+      width: 32rem;
+    }
+
+    .loading {
+      margin-top: 2rem;
+    }
+
+    .loading-overlay {
+      top: 30%;
+    }
+
+    .vid-din-sida-banner {
+      height: 22.5rem;
+    }
+
+    .kampanj-content {
+      padding-right: 0rem;
+      padding-left: 0rem;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .image-contain.list-split {
+      width: 100%;
+    }
+
+    .vid-din-sida-banner-slice {
+      height: 6rem;
+      max-height: 6rem;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .kampanj-blob {
+      padding: 2rem 1.5rem;
+    }
+
+    .kampanj-blob-yttre {
+      width: 95%;
+      padding: 0.7rem;
+    }
+
+    .image-cover.wavy-transition {
+      display: none;
+    }
+
+    .image-cover.align-bottom {
+      position: relative;
+    }
+
+    .image-cover.schysst-handel {
+      min-height: 90vw;
+      background-position: 0% 50%;
+    }
+
+    .elpriser-wrapper {
+      width: 95%;
+      padding: 0.7rem;
+    }
+
+    .elpris-input.calendar {
+      padding-right: 38px;
+    }
+
+    .calendar-icon {
+      right: 3%;
+    }
+
+    .spacer-s {
+      width: 0.5rem;
+      height: 0.5rem;
+    }
+
+    .satt-att-paverka {
+      width: 29rem;
+    }
+
+    .satt-att-paverka-v2 {
+      width: 29rem;
+    }
+
+    .vid-din-sida-banner {
+      height: 18rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+
+    .kampanj-content {
+      padding-right: 0rem;
+      padding-left: 0rem;
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .vid-din-sida-banner-slice {
+      height: 5rem;
+      max-height: 5rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+
+    .kampanj-relative.wavy-transition {
+      height: 50rem;
+    }
+
+    .kampanj-relative.the-wave {
+      display: none;
+    }
+
+    .wavy-transition-padding {
+      padding-right: 0rem;
+    }
+  }
+
+  #w-node-_26e294cf-2d81-4a46-2310-129f52aa7368-28882122 {
+    -ms-grid-column: span 4;
+    grid-column-start: span 4;
+    -ms-grid-column-span: 4;
+    grid-column-end: span 4;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-_71cd04ff-74f3-86aa-9941-b9bf7865df3d-28882122 {
+    -ms-grid-column: span 2;
+    grid-column-start: span 2;
+    -ms-grid-column-span: 2;
+    grid-column-end: span 2;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-_5f5ebb57-f7ba-4d00-31e3-14fdc2b3033f-28882122 {
+    -ms-grid-column: span 3;
+    grid-column-start: span 3;
+    -ms-grid-column-span: 3;
+    grid-column-end: span 3;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    -ms-grid-column-align: stretch;
+    justify-self: stretch;
+  }
+
+  #w-node-f54f377c-4321-5c4f-9d36-cb81f39a0c35-28882122 {
+    -ms-grid-column: span 3;
+    grid-column-start: span 3;
+    -ms-grid-column-span: 3;
+    grid-column-end: span 3;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  #w-node-_706402b5-cc49-e6d1-ce10-08ae1b23424a-28882122 {
+    -ms-grid-column: span 3;
+    grid-column-start: span 3;
+    -ms-grid-column-span: 3;
+    grid-column-end: span 3;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  #w-node-_28e2818f-e15e-3058-f273-4eb8151809dd-28882122 {
+    -ms-grid-column: span 3;
+    grid-column-start: span 3;
+    -ms-grid-column-span: 3;
+    grid-column-end: span 3;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    -ms-grid-column-align: stretch;
+    justify-self: stretch;
+  }
+
+  #w-node-_09f7840e-99f4-5498-1826-48c34a39a330-28882122 {
+    -ms-grid-column: span 5;
+    grid-column-start: span 5;
+    -ms-grid-column-span: 5;
+    grid-column-end: span 5;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-_4ceab208-e901-d9d0-6f24-7c42d5a5cdaa-28882122 {
+    -ms-grid-column: span 2;
+    grid-column-start: span 2;
+    -ms-grid-column-span: 2;
+    grid-column-end: span 2;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-_1f382d8a-f2ec-f5d8-8c35-391db82ad906-28882122 {
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column-align: end;
+    justify-self: end;
+    -ms-grid-row-align: start;
+    align-self: start;
+  }
+
+  #w-node-f89c4d92-31ac-1235-1b8c-599525837c15-28882122 {
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column-align: end;
+    justify-self: end;
+    -ms-grid-row-align: start;
+    align-self: start;
+  }
+
+  #w-node-_3217d6c2-a669-d90e-1457-68f6734d3038-28882122 {
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column-align: end;
+    justify-self: end;
+    -ms-grid-row-align: start;
+    align-self: start;
+  }
+
+  #w-node-_521e22bf-d6b4-2d9f-1e15-19aed50af0ba-28882122 {
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column-align: end;
+    justify-self: end;
+    -ms-grid-row-align: start;
+    align-self: start;
+  }
+
+  #w-node-_4cc730ab-316b-845b-054d-8cb90fcda6d8-28882122 {
+    -ms-grid-column: span 5;
+    grid-column-start: span 5;
+    -ms-grid-column-span: 5;
+    grid-column-end: span 5;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-b435b894-16f0-653b-2131-f85da8509c12-28882122 {
+    -ms-grid-column: span 5;
+    grid-column-start: span 5;
+    -ms-grid-column-span: 5;
+    grid-column-end: span 5;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-b435b894-16f0-653b-2131-f85da8509c17-28882122 {
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column-align: end;
+    justify-self: end;
+    -ms-grid-row-align: start;
+    align-self: start;
+  }
+
+  #w-node-b435b894-16f0-653b-2131-f85da8509c1e-28882122 {
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column-align: end;
+    justify-self: end;
+    -ms-grid-row-align: start;
+    align-self: start;
+  }
+
+  #w-node-b435b894-16f0-653b-2131-f85da8509c25-28882122 {
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column-align: end;
+    justify-self: end;
+    -ms-grid-row-align: start;
+    align-self: start;
+  }
+
+  #w-node-f89310e4-ad5d-13d5-358a-76343be10e25-28882122 {
+    -ms-grid-column: span 5;
+    grid-column-start: span 5;
+    -ms-grid-column-span: 5;
+    grid-column-end: span 5;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-_21987f4a-b139-69dc-7e44-3902e9a6731e-28882122 {
+    -ms-grid-column: span 5;
+    grid-column-start: span 5;
+    -ms-grid-column-span: 5;
+    grid-column-end: span 5;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-_0550b257-d214-f5b5-9c16-600d08fe1776-28882122 {
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-column-span: 3;
+    grid-column-end: 4;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 2;
+  }
+
+  #w-node-df147b1d-bbee-fe1c-a51f-84e56dd7be61-28882122 {
+    -ms-grid-column: 3;
+    grid-column-start: 3;
+    -ms-grid-column-span: 4;
+    grid-column-end: 7;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 2;
+  }
+
+  #w-node-dfc66997-b9d6-a396-8416-676cfa746d65-28882122 {
+    -ms-grid-column: 4;
+    grid-column-start: 4;
+    -ms-grid-column-span: 3;
+    grid-column-end: 7;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 2;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  #w-node-_88718a68-5de0-2c3e-e7e6-f7793482769d-28882122 {
+    -ms-grid-column: span 4;
+    grid-column-start: span 4;
+    -ms-grid-column-span: 4;
+    grid-column-end: span 4;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-c48f5707-9a31-572f-4dcf-cec5e9b434d6-28882122 {
+    -ms-grid-column: span 2;
+    grid-column-start: span 2;
+    -ms-grid-column-span: 2;
+    grid-column-end: span 2;
+    -ms-grid-row: span 2;
+    grid-row-start: span 2;
+    -ms-grid-row-span: 2;
+    grid-row-end: span 2;
+    -ms-grid-row-align: start;
+    align-self: start;
+    -ms-grid-column-align: stretch;
+    justify-self: stretch;
+  }
+
+  #w-node-_9b2e02ad-4f0d-b842-79d6-7b8c3018286e-28882122 {
+    -ms-grid-column: span 4;
+    grid-column-start: span 4;
+    -ms-grid-column-span: 4;
+    grid-column-end: span 4;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-_1b2c0faa-775a-bcda-60ef-8a83ac12147c-28882122 {
+    -ms-grid-column: span 3;
+    grid-column-start: span 3;
+    -ms-grid-column-span: 3;
+    grid-column-end: span 3;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-_1b2c0faa-775a-bcda-60ef-8a83ac12148b-28882122 {
+    -ms-grid-column: span 3;
+    grid-column-start: span 3;
+    -ms-grid-column-span: 3;
+    grid-column-end: span 3;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-row-align: end;
+    align-self: end;
+    -ms-grid-column-align: stretch;
+    justify-self: stretch;
+  }
+
+  #w-node-_346fd8dd-ace9-ef86-d26a-e401e72feac0-28882122 {
+    -ms-grid-column: span 4;
+    grid-column-start: span 4;
+    -ms-grid-column-span: 4;
+    grid-column-end: span 4;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-_346fd8dd-ace9-ef86-d26a-e401e72feacf-28882122 {
+    -ms-grid-column: span 2;
+    grid-column-start: span 2;
+    -ms-grid-column-span: 2;
+    grid-column-end: span 2;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-row-align: start;
+    align-self: start;
+    -ms-grid-column-align: stretch;
+    justify-self: stretch;
+  }
+
+  #w-node-_2c2d714e-99db-596e-7764-54b97d1d39fa-28882122 {
+    -ms-grid-column: span 4;
+    grid-column-start: span 4;
+    -ms-grid-column-span: 4;
+    grid-column-end: span 4;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+  }
+
+  #w-node-_2c2d714e-99db-596e-7764-54b97d1d3a09-28882122 {
+    -ms-grid-column: span 2;
+    grid-column-start: span 2;
+    -ms-grid-column-span: 2;
+    grid-column-end: span 2;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-row-align: start;
+    align-self: start;
+    -ms-grid-column-align: stretch;
+    justify-self: stretch;
+  }
+
+  #w-node-b9d373e4-72e5-4209-ea21-87869f65c752-28882122 {
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-column-span: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 2;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    -ms-grid-column-align: stretch;
+    justify-self: stretch;
+  }
+
+  #w-node-_0a01b802-a5cc-ecfd-9629-7b9a60c2d837-28882122 {
+    -ms-grid-column: span 3;
+    grid-column-start: span 3;
+    -ms-grid-column-span: 3;
+    grid-column-end: span 3;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  #w-node-_85e29099-1831-7022-8dee-b4aef45f6fd9-28882122 {
+    -ms-grid-column: span 3;
+    grid-column-start: span 3;
+    -ms-grid-column-span: 3;
+    grid-column-end: span 3;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  #w-node-_00b4db82-159e-a2ab-d39e-4bfe1c8e94a5-28882122 {
+    -ms-grid-column: span 3;
+    grid-column-start: span 3;
+    -ms-grid-column-span: 3;
+    grid-column-end: span 3;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    -ms-grid-column-align: stretch;
+    justify-self: stretch;
+  }
+
+  #w-node-cb1fe031-783d-eae5-1821-298b42cc457a-70d3228e {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    -ms-grid-column-align: stretch;
+    justify-self: stretch;
+  }
+
+  @media screen and (max-width: 991px) {
+    #w-node-_4cc730ab-316b-845b-054d-8cb90fcda6d8-28882122 {
+      -ms-grid-column: span 6;
+      grid-column-start: span 6;
+      -ms-grid-column-span: 6;
+      grid-column-end: span 6;
+    }
+
+    #w-node-b435b894-16f0-653b-2131-f85da8509c12-28882122 {
+      -ms-grid-column: span 6;
+      grid-column-start: span 6;
+      -ms-grid-column-span: 6;
+      grid-column-end: span 6;
+    }
+
+    #w-node-b9d373e4-72e5-4209-ea21-87869f65c752-28882122 {
+      -ms-grid-column: 1;
+      grid-column-start: 1;
+    }
+
+    #w-node-_0a01b802-a5cc-ecfd-9629-7b9a60c2d837-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    #w-node-_71cd04ff-74f3-86aa-9941-b9bf7865df3d-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+      -ms-grid-row: span 1;
+      grid-row-start: span 1;
+      -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+    }
+
+    #w-node-_5f5ebb57-f7ba-4d00-31e3-14fdc2b3033f-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-f54f377c-4321-5c4f-9d36-cb81f39a0c35-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_706402b5-cc49-e6d1-ce10-08ae1b23424a-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_28e2818f-e15e-3058-f273-4eb8151809dd-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_09f7840e-99f4-5498-1826-48c34a39a330-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_4cc730ab-316b-845b-054d-8cb90fcda6d8-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-b435b894-16f0-653b-2131-f85da8509c12-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-f89310e4-ad5d-13d5-358a-76343be10e25-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_21987f4a-b139-69dc-7e44-3902e9a6731e-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_0550b257-d214-f5b5-9c16-600d08fe1776-28882122 {
+      -ms-grid-column-span: 2;
+      grid-column-end: 3;
+      -ms-grid-column: 1;
+      grid-column-start: 1;
+      -ms-grid-row: 1;
+      grid-row-start: 1;
+      -ms-grid-row-span: 1;
+      grid-row-end: 2;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+    }
+
+    #w-node-df147b1d-bbee-fe1c-a51f-84e56dd7be61-28882122 {
+      -ms-grid-column-span: 3;
+      grid-column-end: 5;
+      -ms-grid-column: 2;
+      grid-column-start: 2;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+      -ms-grid-row: 1;
+      grid-row-start: 1;
+      -ms-grid-row-span: 1;
+      grid-row-end: 2;
+    }
+
+    #w-node-dfc66997-b9d6-a396-8416-676cfa746d65-28882122 {
+      -ms-grid-column: 3;
+      grid-column-start: 3;
+      -ms-grid-column-span: 2;
+      grid-column-end: 5;
+      -ms-grid-row-span: 1;
+      grid-row-end: 2;
+      -ms-grid-row: 1;
+      grid-row-start: 1;
+      -ms-grid-row-align: center;
+      align-self: center;
+    }
+
+    #w-node-_88718a68-5de0-2c3e-e7e6-f7793482769d-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-c48f5707-9a31-572f-4dcf-cec5e9b434d6-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_9b2e02ad-4f0d-b842-79d6-7b8c3018286e-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_1b2c0faa-775a-bcda-60ef-8a83ac12147c-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_1b2c0faa-775a-bcda-60ef-8a83ac12148b-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_346fd8dd-ace9-ef86-d26a-e401e72feac0-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_346fd8dd-ace9-ef86-d26a-e401e72feacf-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_2c2d714e-99db-596e-7764-54b97d1d39fa-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_2c2d714e-99db-596e-7764-54b97d1d3a09-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-b9d373e4-72e5-4209-ea21-87869f65c752-28882122 {
+      -ms-grid-column: 1;
+      grid-column-start: 1;
+      -ms-grid-column-span: 2;
+      grid-column-end: 3;
+      -ms-grid-row-span: 1;
+      grid-row-end: 2;
+      -ms-grid-row: 1;
+      grid-row-start: 1;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+      -ms-grid-column-align: stretch;
+      justify-self: stretch;
+    }
+
+    #w-node-_0a01b802-a5cc-ecfd-9629-7b9a60c2d837-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_85e29099-1831-7022-8dee-b4aef45f6fd9-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+
+    #w-node-_00b4db82-159e-a2ab-d39e-4bfe1c8e94a5-28882122 {
+      -ms-grid-column: span 4;
+      grid-column-start: span 4;
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    #w-node-_26e294cf-2d81-4a46-2310-129f52aa7368-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_71cd04ff-74f3-86aa-9941-b9bf7865df3d-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_5f5ebb57-f7ba-4d00-31e3-14fdc2b3033f-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-f54f377c-4321-5c4f-9d36-cb81f39a0c35-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_706402b5-cc49-e6d1-ce10-08ae1b23424a-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_28e2818f-e15e-3058-f273-4eb8151809dd-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_09f7840e-99f4-5498-1826-48c34a39a330-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_4cc730ab-316b-845b-054d-8cb90fcda6d8-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-b435b894-16f0-653b-2131-f85da8509c12-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-f89310e4-ad5d-13d5-358a-76343be10e25-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_21987f4a-b139-69dc-7e44-3902e9a6731e-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-df147b1d-bbee-fe1c-a51f-84e56dd7be61-28882122 {
+      -ms-grid-column: 1;
+      grid-column-start: 1;
+      -ms-grid-column-span: 2;
+      grid-column-end: 3;
+    }
+
+    #w-node-dfc66997-b9d6-a396-8416-676cfa746d65-28882122 {
+      -ms-grid-column: 1;
+      grid-column-start: 1;
+      -ms-grid-column-span: 2;
+      grid-column-end: 3;
+      -ms-grid-row-span: 1;
+      grid-row-end: 3;
+      -ms-grid-row: 2;
+      grid-row-start: 2;
+    }
+
+    #w-node-_88718a68-5de0-2c3e-e7e6-f7793482769d-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-c48f5707-9a31-572f-4dcf-cec5e9b434d6-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_9b2e02ad-4f0d-b842-79d6-7b8c3018286e-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_1b2c0faa-775a-bcda-60ef-8a83ac12147c-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_1b2c0faa-775a-bcda-60ef-8a83ac12148b-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_346fd8dd-ace9-ef86-d26a-e401e72feac0-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_346fd8dd-ace9-ef86-d26a-e401e72feacf-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_2c2d714e-99db-596e-7764-54b97d1d39fa-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_2c2d714e-99db-596e-7764-54b97d1d3a09-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-b9d373e4-72e5-4209-ea21-87869f65c752-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_0a01b802-a5cc-ecfd-9629-7b9a60c2d837-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_85e29099-1831-7022-8dee-b4aef45f6fd9-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+
+    #w-node-_00b4db82-159e-a2ab-d39e-4bfe1c8e94a5-28882122 {
+      -ms-grid-column: span 2;
+      grid-column-start: span 2;
+      -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+    }
+  }
+
+  @font-face {
+    font-family: "Avenirltstd";
+    src: url("../fonts/AvenirLTStd-Heavy.woff2") format("woff2"),
+      url("../fonts/AvenirLTStd-Black.woff2") format("woff2"),
+      url("../fonts/AvenirLTStd-Heavy.eot") format("embedded-opentype"),
+      url("../fonts/AvenirLTStd-Black.eot") format("embedded-opentype"),
+      url("../fonts/AvenirLTStd-Heavy.woff") format("woff"),
+      url("../fonts/AvenirLTStd-Black.woff") format("woff"),
+      url("../fonts/AvenirLTStd-Heavy.ttf") format("truetype"),
+      url("../fonts/AvenirLTStd-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Avenirltstd book";
+    src: url("../fonts/AvenirLTStd-Book.woff2") format("woff2"),
+      url("../fonts/AvenirLTStd-Book.eot") format("embedded-opentype"),
+      url("../fonts/AvenirLTStd-Book.woff") format("woff"),
+      url("../fonts/AvenirLTStd-Book.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Avenirltstd roman";
+    src: url("../fonts/AvenirLTStd-Roman.woff2") format("woff2"),
+      url("../fonts/AvenirLTStd-Roman.eot") format("embedded-opentype"),
+      url("../fonts/AvenirLTStd-Roman.woff") format("woff"),
+      url("../fonts/AvenirLTStd-Roman.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Avenirltstd";
+    src: url("../fonts/AvenirLTStd-Oblique.woff2") format("woff2"),
+      url("../fonts/AvenirLTStd-Oblique.eot") format("embedded-opentype"),
+      url("../fonts/AvenirLTStd-Oblique.woff") format("woff"),
+      url("../fonts/AvenirLTStd-Oblique.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Avenirltstd";
+    src: url("../fonts/AvenirLTStd-Medium.woff2") format("woff2"),
+      url("../fonts/AvenirLTStd-Medium.eot") format("embedded-opentype"),
+      url("../fonts/AvenirLTStd-Medium.woff") format("woff"),
+      url("../fonts/AvenirLTStd-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Avenirltstd";
+    src: url("../fonts/AvenirLTStd-Light.woff2") format("woff2"),
+      url("../fonts/AvenirLTStd-Light.eot") format("embedded-opentype"),
+      url("../fonts/AvenirLTStd-Light.woff") format("woff"),
+      url("../fonts/AvenirLTStd-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Stingray";
+    src: url("../fonts/Stingray.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>
 
 <div class="content">
   <div class="vid-din-sida-banner">
-    <img
-      src="/wp-content/uploads/2022/09/Kampanjlogo.png"
-      loading="lazy"
-      alt=""
-    />
+    <div class="banner-title-image"></div>
   </div>
   <div class="spacer"></div>
   <div class="kampanj-content">
@@ -57,34 +2289,22 @@
   </div>
   <div class="spacer"></div>
   <div class="kampanj-content col-candy-floss-cupcake">
-    <img
-      src="/wp-content/uploads/2022/09/puls_2000px.jpg"
-      loading="lazy"
-      id="w-node-_13fe6dc7-8d25-3deb-d8da-2a3e40e91691-28882122"
-      srcset="
-        /wp-content/uploads/2022/09/puls_2000px-p-500.jpg   500w,
-        /wp-content/uploads/2022/09/puls_2000px-p-800.jpg   800w,
-        /wp-content/uploads/2022/09/puls_2000px-p-1080.jpg 1080w,
-        /wp-content/uploads/2022/09/puls_2000px-p-1600.jpg 1600w,
-        /wp-content/uploads/2022/09/puls_2000px-p-2000.jpg 2000w,
-        /wp-content/uploads/2022/09/puls_2000px.jpg        2000w
-      "
-      sizes="100vw"
-      alt=""
-      class="image-contain"
-    />
+    <div
+      id="w-node-_5f5ebb57-f7ba-4d00-31e3-14fdc2b3033f-28882122"
+      class="image-cover coffee"
+    ></div>
     <div id="w-node-f54f377c-4321-5c4f-9d36-cb81f39a0c35-28882122">
       <div class="kampanj-text rubrik">
         Borås Elhandel på radio under hösten
       </div>
       <div class="kampanj-text">
-        Under hösten kommer Borås Elhandel att gästa Puls FM på tisdagar, för
-        att berätta mer om elmarknaden, ge en uppdatering kring läget och hur
-        det påverkar elpriserna framöver. Vad händer på elmarknaden just nu? Och
-        hur ska man tänka som kund framöver?<br /><br /><strong
-          >Lyssna på vår marknadschef Andreas varje tisdag morgon kl 07.00–07.30
-          på Puls FM!</strong
-        >
+        Under hösten kommer Borås Elhandel att gästa Puls FM för att berätta mer
+        om elmarknaden, ge en uppdatering kring läget och hur det påverkar
+        elpriserna framöver. Vad händer på elmarknaden just nu? Och hur ska man
+        tänka som kund framöver?<br /><br /><strong
+          >Lyssna på vår marknadschef Andreas på Puls FM! Datum för inslagen är
+          ännu inte satta, håll utkik under hösten!</strong
+        ><br />
       </div>
     </div>
   </div>
@@ -111,19 +2331,10 @@
         >Läs mer om elpriser idag</a
       >
     </div>
-    <img
-      src="/wp-content/uploads/2022/09/Ledningar.png"
-      loading="lazy"
-      id="w-node-_706402b5-cc49-e6d1-ce10-08ae1b234249-28882122"
-      srcset="
-        /wp-content/uploads/2022/09/Ledningar-p-500.png 500w,
-        /wp-content/uploads/2022/09/Ledningar-p-800.png 800w,
-        /wp-content/uploads/2022/09/Ledningar.png       900w
-      "
-      sizes="100vw"
-      alt=""
-      class="image-contain"
-    />
+    <div
+      id="w-node-_28e2818f-e15e-3058-f273-4eb8151809dd-28882122"
+      class="image-cover electric-lines"
+    ></div>
   </div>
   <div class="spacer"></div>
   <div class="vid-din-sida-banner-slice"></div>
@@ -301,7 +2512,7 @@
         Vi får många frågor om energieffektivisering och vad man kan göra för
         att själv minska sin energiförbrukning. Och det bästa sättet att sänka
         sina elkostnader just nu är faktiskt att själv se över sin förbrukning.
-        För varje kilowattimme du sparar blir din elräkning lägre. Vissa saker
+        För varje kilowattimme du sparar blir din elräkning lägre. Vissa
         förändringar kan du enkelt börja med direkt, medan andra kräver en lite
         större investering.
       </div>
@@ -343,6 +2554,11 @@
         sprida vår gemensamma elförbrukning över dygnet vilket sänker priset på
         el.
       </div>
+      <a
+        href="https://boraselhandel.se/privat/elavtal/elpriser-idag/"
+        class="kampanj-button w-button"
+        >Fler energispartips här</a
+      >
     </div>
   </div>
   <div class="kampanj-content">
@@ -354,11 +2570,28 @@
         25000kWh/år, drar uppvärmningen mest energi, därefter kommer varmvatten
         och hushållsel (belysning, matlagning och underhållning etc). Ett sätt
         att sänka sina elkostnader ordentligt kan alltså vara att byta lösning
-        för uppvärmning, till exempel att installera en värmepump.
+        för uppvärmning, till exempel att installera en värmepump.<br />‍
       </div>
     </div>
-  </div>
-  <div class="kampanj-content">
+    <div
+      id="w-node-c48f5707-9a31-572f-4dcf-cec5e9b434d6-28882122"
+      class="blob col-explorer-blue"
+    >
+      <div class="kampanj-text bold text-white">
+        Snittförbrukning, villa<br />‍
+      </div>
+      <div class="kampanj-text text-white">
+        <strong>Uppvärmning el<br /></strong>25 000 kWh/år<strong
+          ><br />‍</strong
+        ><br />
+      </div>
+      <div class="kampanj-text text-white">
+        <strong>Uppvärmning fjärrvärme/pellets<br /></strong>7 000 kWh/år<br />‍<br />
+      </div>
+      <div class="kampanj-text text-white">
+        <strong>Uppvärmning värmepump<br /></strong>10 000 –12 000 kWh/år<br />
+      </div>
+    </div>
     <div id="w-node-_9b2e02ad-4f0d-b842-79d6-7b8c3018286e-28882122">
       <div class="kampanj-text rubrik">Vad är en normal elförbrukning?</div>
       <div class="kampanj-text">
@@ -367,22 +2600,6 @@
         Elförbrukningen beror på:<br />• Antal personer i hushållet<br />•
         Husets ålder<br />• Uppvärmningssystem<br />• Isolering<br />• Var i
         landet du bor
-      </div>
-    </div>
-    <div
-      id="w-node-c48f5707-9a31-572f-4dcf-cec5e9b434d6-28882122"
-      class="blob col-explorer-blue"
-    >
-      <div class="kampanj-text bold text-white">
-        Snittförbrukning och snittpris<br />‍
-      </div>
-      <div class="_2-split">
-        <div class="kampanj-text text-white">
-          <strong>Villa</strong><br />25 000 kWh/år<br />35 000 kr/år
-        </div>
-        <div class="kampanj-text text-white">
-          <strong>Mindre lägenhet</strong><br />2 400 kWh/år<br />3 500 kr/år
-        </div>
       </div>
     </div>
   </div>
@@ -509,27 +2726,22 @@
   </div>
   <div class="spacer"></div>
   <div id="schysst" class="kampanj-content col-candy-floss-cupcake">
-    <img
-      src="/wp-content/uploads/2022/09/SchysstElhandel.jpg"
-      loading="lazy"
-      id="w-node-_0a01b802-a5cc-ecfd-9629-7b9a60c2d836-28882122"
-      alt=""
-      class="image-contain"
-    />
+    <div
+      id="w-node-b9d373e4-72e5-4209-ea21-87869f65c752-28882122"
+      class="image-cover schysst-handel"
+    ></div>
     <div id="w-node-_0a01b802-a5cc-ecfd-9629-7b9a60c2d837-28882122">
       <div class="kampanj-text bold">
         I osäkra tider – välj en schysst elhandlare!<br />‍
       </div>
       <div class="kampanj-text">
         Att teckna elavtal i dessa osäkra tider kan kännas läskigt. Vi på Borås
-        Elhandel är certifierade med Schysst Elhandel, vilket bland annat
-        betyder att vi alltid har 14 dagars ångerrätt om du skulle ändra dig. Vi
-        vill också påminna om att det inte alltid är ett bra alternativ att byta
-        elavtal – ibland kan det bästa vara det man redan har. Tänk på att
-        aldrig ta några förhastade beslut, om du till exempel blir uppringd av
-        en säljare eller stoppad i gallerian. Jämför elpriser och avtalsvillkor
-        i lugn och ro, och fundera över vad som passar dig läget på elmarknaden
-        och just din situation.
+        Elhandel är certifierade med Schysst Elhandel. Vi vill också påminna om
+        att det inte alltid är ett bra alternativ att byta elavtal – ibland kan
+        det bästa vara det man redan har. Tänk på att aldrig ta några förhastade
+        beslut, om du till exempel blir uppringd av en säljare eller stoppad i
+        gallerian. Jämför elpriser och avtalsvillkor i lugn och ro, och fundera
+        över vad som passar dig läget på elmarknaden och just din situation.
       </div>
       <a
         href="https://boraselhandel.se/schysst-elhandel/"
@@ -551,27 +2763,15 @@
         ber vi dig ha överseende med att vi har lite längre väntetider än
         vanligt då det är många som vill prata med oss just nu. <br />Du når oss
         på 033-20 67 00 eller kundsupport@boraselhandel.se<br /><br /><strong
-          >Här hittar du svar på de vanligaste <br />frågorna vi får just
-          nu.</strong
+          >Har du frågor kan du alltid kontakta oss direkt via vår chatbot, du
+          hittar den här på sidan till höger.</strong
         >
       </div>
-      <a href="https://boraselhandel.se/faq/" class="kampanj-button w-button"
-        >Till FAQ</a
-      >
     </div>
-    <img
-      src="/wp-content/uploads/2022/09/Kund_bild.jpg"
-      loading="lazy"
-      id="w-node-_85e29099-1831-7022-8dee-b4aef45f6fd8-28882122"
-      srcset="
-        /wp-content/uploads/2022/09/Kund_bild-p-500.jpg 500w,
-        /wp-content/uploads/2022/09/Kund_bild-p-800.jpg 800w,
-        /wp-content/uploads/2022/09/Kund_bild.jpg       900w
-      "
-      sizes="100vw"
-      alt=""
-      class="image-contain"
-    />
+    <div
+      id="w-node-_00b4db82-159e-a2ab-d39e-4bfe1c8e94a5-28882122"
+      class="image-cover vid-din-sida"
+    ></div>
   </div>
   <div class="spacer"></div>
 </div>
@@ -583,7 +2783,7 @@
   crossorigin="anonymous"
 ></script>
 <script
-  src="https://filedn.eu/lXpklx4T9ArjUUtKzxsQ36h/boraselhandel/boras-elhandel.css"
+  src="https://filedn.eu/lXpklx4T9ArjUUtKzxsQ36h/boraselhandel/boras-elhandel.js"
   type="text/javascript"
 ></script>
 <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
