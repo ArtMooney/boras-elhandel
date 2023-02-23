@@ -147,19 +147,9 @@
 
       function removeGraphCompare() {
         const chart = myChart;
-
-        //safari and chrome
-        if (chart.data) {
-          if (chart.data.datasets.length > 1) {
-            chart.data.datasets.pop();
-            chart.update();
-          }
-        } else {
-          // brave and firefox
-          if (chart.dataset.length > 1) {
-            chart.dataset.pop();
-            chart.update();
-          }
+        if (chart.data.datasets.length > 1) {
+          chart.data.datasets.pop();
+          chart.update();
         }
       }
 
