@@ -1,6 +1,6 @@
 <div class="content">
   <div class="html-embed w-embed w-script">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0"></script>
 
     <link
       href="https://filedn.eu/lXpklx4T9ArjUUtKzxsQ36h/boraselhandel/normalize.css"
@@ -140,7 +140,8 @@
             for (var i = 0; i < result[a].json.hourly.length; i++) {
               data.datasets[0].data.push(parseFloat(result[a].json.hourly[i]));
             }
-            // myChart.update();
+
+            myChart.update();
           }
         }
       }
@@ -148,18 +149,9 @@
       function removeGraphCompare() {
         const chart = myChart;
 
-        //safari and chrome
-        if (chart.data) {
-          if (chart.data.datasets.length > 1) {
-            chart.data.datasets.pop();
-            chart.update();
-          }
-        } else {
-          // brave and firefox
-          if (chart.dataset.length > 1) {
-            chart.dataset.pop();
-            chart.update();
-          }
+        if (chart.data.datasets.length > 1) {
+          chart.data.datasets.pop();
+          chart.update();
         }
       }
 
